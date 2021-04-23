@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { GET_MAIN_INFO } from "../../store/actionName/actionNames";
+import { GET_MAIN_INFO } from "app/store/actionName/actionNames";
 import GoogleMapReact from "google-map-react";
-import Marker from "./Marker";
-import { google_map_key } from "../../config/api";
-import { AllFlights } from "../../api-interfaces";
+import Marker from "../Marker";
+import { google_map_key } from "app/config/api";
+import { AllFlights } from "app/api-interfaces";
 import { MapContainer } from "./styles";
 
 interface RootState {
