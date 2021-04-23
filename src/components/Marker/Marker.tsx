@@ -1,10 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import background from "app/images/airplane.png";
+import background from "../../images/airplane.png";
 import { MapFlightMarker } from "./styles";
 import { useHistory } from "react-router-dom";
-import { GET_DETAIL_INFO } from "app/store/actionName/actionNames";
-import { routers } from "app/config/router";
+import { GET_DETAIL_INFO } from "../../store/actionName/actionNames";
+import { routers } from "../../config/router";
 
 const Marker = (props: any) => {
   const dispatch = useDispatch();

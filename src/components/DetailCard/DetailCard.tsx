@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { AirplaneItemDetailModel } from "app/shared/interfaces";
+import { AirplaneItemDetailModel } from "../../shared/interfaces";
 import {
   ImageSliderWrapper,
   DetailBox,
@@ -15,10 +15,10 @@ import {
 } from "./styles";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { JetPhotos } from "app/api-interfaces";
-import { GET_DETAIL_INFO } from "app/store/actionName/actionNames";
+import { JetPhotos } from "../../api-interfaces";
+import { GET_DETAIL_INFO } from "../../store/actionName/actionNames";
 import axios from "axios";
-import { URL } from "app/config/api";
+import { URL } from "../../config/api";
 
 interface DetailboxPropsModel {
   detailData: AirplaneItemDetailModel;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { GET_MAIN_INFO } from "./store/actionName/actionNames";
 import MapPage from "./pages/MapPage";
-import DetailsPage from "./pages/DetailsPage";
+import DetailsPage from "./pages/DetailPage";
 import { routers } from './config/router';
 import {
   Switch,

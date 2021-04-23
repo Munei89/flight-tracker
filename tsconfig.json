@@ -18,13 +18,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "paths": {
-      "app/*": ["src/*/index", "src/*"]
-    },
+    "jsx": "react-jsx"
   },
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ],
   "include": [
-    "src"
-, "shared", "shared"  ]
+    "src",
+    "shared",
+    "shared"
+  ],
+  "paths": {
+    "app/*": ["src/*/index", "src/*"]
+  }
 }
