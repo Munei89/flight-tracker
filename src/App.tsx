@@ -1,17 +1,29 @@
-import './App.css';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { GET_MAIN_INFO } from "./store/actionName/actionNames";
+import MapPage from "./pages/MapPage";
+import DetailsPage from "./pages/DetailPage";
+import { routers } from './config/router';
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: GET_MAIN_INFO });
+  }, [dispatch])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={'cartrack-logo.svg'} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Cartrack's Front-End Tech Challenge.
-        </p>
-        <p>
-          Happy Coding!
-        </p>
-      </header>
+
+    <div>
+      <Switch>
+        <Route path={routers.MAPPAGE} exact component={MapPage} />
+        <Route path={routers.DETAILSPAGE} component={DetailsPage} />
+      </Switch>
     </div>
   );
 }
